@@ -4,7 +4,7 @@ import models, schemas
 
 
 def get_user_by_lastname(db: Session, lastname: str):
-    return db.query(models.User_DB).filter(models.User_DB.lastname==lastname).first()
+    return db.query(models.User_DB).filter(models.User_DB.lastname == lastname).first()
 
 
 def create_user(db: Session, user: schemas.User):
